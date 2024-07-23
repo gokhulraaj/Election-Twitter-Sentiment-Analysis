@@ -1,5 +1,3 @@
-markdown
-Copy code
 # Indian Election Sentiment Analysis
 
 This project performs sentiment analysis on tweets related to Indian politicians, specifically Narendra Modi and Rahul Gandhi. The analysis uses the TextBlob library to classify tweets into positive, negative, or neutral categories and visualizes the results using Plotly.
@@ -73,7 +71,3 @@ fig.show()
 Results
 The analysis provides insights into public sentiment towards Narendra Modi and Rahul Gandhi based on tweet data. The visualizations depict the distribution of positive and negative sentiments for each politician.
 
-Contributing
-Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
-
-License
