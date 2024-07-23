@@ -8,8 +8,6 @@ This project performs sentiment analysis on tweets related to Indian politicians
 
 - `modi_reviews.csv`: CSV file containing tweets related to Narendra Modi.
 - `rahul_reviews.csv`: CSV file containing tweets related to Rahul Gandhi.
-- `Main.py`: The main script for performing sentiment analysis and visualization.
-- `sentiment-analysis.ipynb`: Jupyter Notebook for interactive exploration of sentiment analysis.
 - `sentiment-analysis.py`: Python script for sentiment analysis.
 
 ## Installation
