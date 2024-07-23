@@ -1,22 +1,27 @@
-Indian Election Sentiment Analysis
-This project analyzes sentiments in tweets related to Indian politicians, specifically Narendra Modi and Rahul Gandhi. Using the TextBlob library, the analysis classifies tweets into positive, negative, or neutral categories. The results are visualized using Plotly.
-
-Project Structure
-modi_reviews.csv: CSV file containing tweets related to Narendra Modi.
-rahul_reviews.csv: CSV file containing tweets related to Rahul Gandhi.
-Main.py: The main script for performing sentiment analysis and visualization.
-sentiment-analysis.ipynb: Jupyter Notebook providing an interactive exploration of sentiment analysis.
-sentiment-analysis.py: Python script for sentiment analysis.
-Installation
-Clone the repository:
-
-bash
+markdown
 Copy code
-git clone https://github.com/gokhulraaj/Election-Twitter-Sentiment-Analysis.git
-cd Election-Twitter-Sentiment-Analysis
+# Indian Election Sentiment Analysis
+
+This project performs sentiment analysis on tweets related to Indian politicians, specifically Narendra Modi and Rahul Gandhi. The analysis uses the TextBlob library to classify tweets into positive, negative, or neutral categories and visualizes the results using Plotly.
+
+## Project Structure
+
+- `modi_reviews.csv`: CSV file containing tweets related to Narendra Modi.
+- `rahul_reviews.csv`: CSV file containing tweets related to Rahul Gandhi.
+- `Main.py`: The main script for performing sentiment analysis and visualization.
+- `sentiment-analysis.ipynb`: Jupyter Notebook for interactive exploration of sentiment analysis.
+- `sentiment-analysis.py`: Python script for sentiment analysis.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/gokhulraaj/Election-Twitter-Sentiment-Analysis.git
+   cd Election-Twitter-Sentiment-Analysis
 Install the required packages:
 
-Ensure you have Python installed, then install the necessary libraries:
+Make sure you have Python installed. Then, install the necessary libraries using:
 
 bash
 Copy code
@@ -24,16 +29,16 @@ pip install numpy pandas textblob plotly
 Usage
 Prepare the Data:
 
-Place the CSV files (modi_reviews.csv and rahul_reviews.csv) in the root directory of the project.
+Ensure that modi_reviews.csv and rahul_reviews.csv are in the root directory of the project.
 
 Run the Analysis:
 
-Execute the script to perform sentiment analysis and visualize the results:
+Execute the Main.py script to perform sentiment analysis and visualize the results:
 
 bash
 Copy code
 python Main.py
-Alternatively, open sentiment-analysis.ipynb in Jupyter Notebook and run the cells interactively.
+Alternatively, you can open sentiment-analysis.ipynb in Jupyter Notebook and run the cells interactively to explore the analysis.
 
 Code Overview
 Data Loading:
@@ -44,7 +49,7 @@ modi = pd.read_csv("./modi_reviews.csv")
 rahul = pd.read_csv("./rahul_reviews.csv")
 Sentiment Analysis:
 
-Sentiments are computed using TextBlob to find polarity and classify tweets into positive, negative, or neutral.
+Sentiments are computed using TextBlob to find the polarity of each tweet, and tweets are classified as positive, negative, or neutral.
 
 python
 Copy code
@@ -55,7 +60,7 @@ modi['Polarity'] = modi['Tweet'].apply(find_polarity)
 rahul['Polarity'] = rahul['Tweet'].apply(find_polarity)
 Data Visualization:
 
-A bar chart shows the percentage of positive and negative sentiments for tweets about each politician.
+A bar chart displays the percentage of positive and negative sentiments for each politician.
 
 python
 Copy code
@@ -68,7 +73,9 @@ fig = go.Figure(
 fig.update_layout(barmode='group')
 fig.show()
 Results
-The analysis yields insights into public sentiment regarding Narendra Modi and Rahul Gandhi based on tweet data. The visualizations illustrate the distribution of positive and negative sentiments.
+The analysis provides insights into public sentiment towards Narendra Modi and Rahul Gandhi based on tweet data. The visualizations depict the distribution of positive and negative sentiments for each politician.
 
+Contributing
+Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
 
-
+License
